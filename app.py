@@ -48,7 +48,7 @@ with col2:
     total_bedrooms = st.number_input("total_bedrooms", min_value=0, step=1)
     population = st.number_input("population", min_value=0, step=1)
     households = st.number_input("households", min_value=0, step=1)
-    median_income = st.number_input("median_income", min_value=0,step=0.0001, format="%.2f")
+    median_income = st.number_input("median_income", step=0.1, format="%.2f")
 
 unique_ocean_proximity = df['ocean_proximity'].unique()
 ocean_proximity = st.selectbox("Select ocean_proximity", unique_ocean_proximity)
