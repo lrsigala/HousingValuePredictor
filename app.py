@@ -28,7 +28,7 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
             return np.c_[X, rooms_per_household, population_per_household]
 
 # Load the pipeline
-pipeline = joblib.load('pipeline.pkl')
+pipeline = joblib.load('/pipeline.pkl')
 
 # Title of the app
 st.title('Predict with Pipeline')
